@@ -57,7 +57,7 @@ describe "Student" do
     end
 
     it 'updates a record if called on an object that is already persisted' do
-      jane = Student.new("Jane", "11th")
+      jane = Student.new("Jane Smith", "11th")
       jane.save
       jane_id = jane.id
       jane.name = "Jane Smith"
